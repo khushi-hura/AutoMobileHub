@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Car-Service-Android-App
 
 ## Project Description
@@ -31,3 +32,7 @@ Refer to the provided diagrams for a visual representation of the app's database
 For a detailed overview of the project, functionality, and development process, please refer to the complete documentation.
 
 Thank you for exploring our Car Servicing App repository!
+=======
+# AutoMobileHub
+Automobile Hub (AMH) is a native Android app built with Java and SQLite, designed for streamlined car service management. Customers can book mechanic-based services, and service providers receive email updates on service completions, cancellations, or reminders. The app stores data locally and generates detailed PDF reports for service history.
+>>>>>>> f2bc2f10ca9e9212d00c141df47e51b34142080e
