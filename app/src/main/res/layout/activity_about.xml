@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A6BCBA"
+    tools:context=".About">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="368dp"
+        android:layout_height="269dp"
+        android:layout_marginTop="444dp"
+        android:layout_marginBottom="124dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@+id/aboutBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.627"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/about" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="204dp"
+        android:layout_height="149dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.027"
+        app:srcCompat="@drawable/amh_circular" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="355dp"
+        android:layout_height="244dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Introducing Auto Mobile Hub (AMH) - the ultimate car service app for hassle free vehicle maintainence. Our app makes it easy for vehicle owners (or customers) to find service centers (authorized or unauthorized service providers) in their area, view available services, and book appointments for drop-off and pick-up. Plus, we offer convinient remainders and the ability to make changes to appointments so you never have to worry about forgetting or missing a scheduled service. With separate modules for customers and Service Providers, AMH offers a streamlined experience for both type of users. Hope you enjoy A.M.H."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

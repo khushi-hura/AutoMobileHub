@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#A6BCBA"
+    tools:context=".Customer_Registration">
+
+    <EditText
+        android:id="@+id/ProviderName"
+        android:layout_width="254dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:background="#A6BCBA"
+        android:hint="@string/hint_Name"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRegTitle" />
+
+    <EditText
+        android:id="@+id/ProviderAddress"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:background="#A6BCBA"
+        android:hint="@string/hint_Address"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
+
+    <EditText
+        android:id="@+id/ProviderContact"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:background="#A6BCBA"
+        android:hint="@string/hint_Contact"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ProviderAddress" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:background="#A6BCBA"
+        android:hint="@string/hint_Email"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ProviderConfirmPassword" />
+
+    <EditText
+        android:id="@+id/textViewRegTitle"
+        android:layout_width="247dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:text="Customer Registration"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+
+    <EditText
+        android:id="@+id/ProviderPassWord"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:background="#A6BCBA"
+        android:hint="@string/hint_password"
+        android:inputType="textPassword"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ProviderName" />
+
+
+    <EditText
+        android:id="@+id/ProviderConfirmPassword"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:background="#A6BCBA"
+        android:hint="@string/hint_confirmPassword"
+        android:inputType="textPassword"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ProviderPassWord" />
+
+    <Button
+        android:id="@+id/bthCustomerRegister"
+        android:layout_width="167dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="12dp"
+        android:onClick="onClickToAppointmentsView"
+        android:text="@string/buttonCRegister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ProviderContact"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/textViewHaveAccount"
+        android:layout_width="153dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/txtHaveAccount"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toStartOf="@+id/logInHere"
+        app:layout_constraintHorizontal_bias="0.796"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bthCustomerRegister" />
+
+    <TextView
+        android:id="@+id/logInHere"
+        android:layout_width="112dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="56dp"
+        android:layout_toEndOf="@+id/textViewHaveAccount"
+        android:onClick="onClickToAppointmentsView"
+        android:text="@string/txtLogHere"
+        android:textColor="#3A478C"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bthCustomerRegister"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="199dp"
+        android:layout_height="135dp"
+        android:layout_marginTop="20dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/amh_circular" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
